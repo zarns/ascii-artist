@@ -20,3 +20,6 @@
   
 * Numpy
 * Pillow
+
+![exampleInput](images/impostor_output.png)
+![exampleInput](images/impostor.jpg)
