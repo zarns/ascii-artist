@@ -58,7 +58,7 @@ if __name__ == '__main__':
     # ASCII = "$@B%8W#*hkbdpqwmZOQLCJXzxrjft1+<>i!l:. "
 
     try:
-        img_path = os.path.join("images/", img_path_argument)
+        img_path = os.path.join("image_input/", img_path_argument)
         img = Image.open(img_path).convert('L')
         
         if img_width:
@@ -68,7 +68,7 @@ if __name__ == '__main__':
         
         current_path = os.path.abspath(os.curdir)
         input_without_suffix = os.path.splitext(img_path_argument)[0]
-        output_path = os.path.join(current_path, "basic_output/", input_without_suffix) + ".txt"
+        output_path = os.path.join(current_path, "image_output/", input_without_suffix) + ".txt"
         img_to_ascii(resized_img, ASCII, output_path)
             
     except Exception as error:
