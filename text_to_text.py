@@ -2,12 +2,13 @@ import os
 import json
 import argparse
 
-with open('fonts/font1.json', 'r') as f:
+with open('fonts/font4.json', 'r') as f:
     char_map = json.load(f)
 
 def string_to_lines(s):
+    height = char_map["height"]
     # Initialize a list of lines with empty strings
-    lines = ['' for _ in range(6)]
+    lines = ['' for _ in range(height)]
 
     # Iterate over the characters in the string
     for char in s:
@@ -15,7 +16,7 @@ def string_to_lines(s):
         char_lines = char_map[char]
 
         # Append the lines of the larger representation to the lines list
-        for i in range(6):
+        for i in range(height):
             lines[i] += char_lines[i]
 
     return lines
