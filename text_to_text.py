@@ -2,7 +2,9 @@ import os
 import json
 import argparse
 
-with open('fonts/font4.json', 'r') as f:
+FONT_FILE = 'font6.json'
+
+with open(f'fonts/{FONT_FILE}', 'r') as f:
     char_map = json.load(f)
 
 def string_to_lines(s):
