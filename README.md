@@ -21,6 +21,8 @@
 * Numpy
 * Pillow
 
+<img src="image_output/brain_display.jpg" alt="exampleOutput" height="450" width="590"/> 
+
 <img src="image_output/impostor_output.png" alt="exampleOutput" height="300" width="305"/> <img src="image_input/impostor.jpg" alt="exampleInput" height="300" width="285"/>
 
 ## 2. Convert text to ascii text art
